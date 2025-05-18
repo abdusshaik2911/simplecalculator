@@ -104,6 +104,7 @@
       <button class="operator" onclick="press('+')">+</button>
 
       <button class="clear" onclick="clearDisplay()">C</button>
+      <button onclick="press('00')">00</button> <!-- filler -->
     </div>
   </div>
 
@@ -127,7 +128,6 @@
       }
     }
 
-    // Keyboard Support
     document.addEventListener("keydown", function (e) {
       const key = e.key;
       if (!isNaN(key) || ['+', '-', '*', '/', '.'].includes(key)) {
